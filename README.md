@@ -5,7 +5,10 @@ Circuit is exprcted to be build for 3V
 ### battery
 CR2032 for start. It needs holder at the bottom [Keystone 3000](https://cz.mouser.com/ProductDetail/Keystone-Electronics/3000?qs=Mn60vILZNNbcLh3ZnzbtUw%3D%3D)
 ### regulator
-[MCP1700T-3302E/TTVAO](https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP1700T-3302E-TTVAO?qs=5aG0NVq1C4y9x%252BiC%252BXtIqg%3D%3D) + 2 condensators [MBASG168AB7105KTNA01](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MBASG168AB7105KTNA01?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXWJL8eB%2Fc1Uk%3D)
+[MCP1700T-3302E/TT](https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP1700T-3302E-TTVAO?qs=5aG0NVq1C4y9x%252BiC%252BXtIqg%3D%3D)
+[1kF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MBASG168AB7105KTNA01?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXWJL8eB%2Fc1Uk%3D)
+[100nF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXza8LoeCVgcc%3D)
+[4.7 kilo ohm](https://cz.mouser.com/ProductDetail/YAGEO/SR0603JR-074R7L?qs=TyBUSTk9pD8f6RpHbu07DQ%3D%3D)
 ## microcontroler
 STM32C011J4M6 (SO8 package) or the STM32C011F4P6
 ### programming
