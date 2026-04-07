@@ -656,9 +656,14 @@
         "filename": "led.kicad_sch",
         "name": "LED",
         "uuid": "9d2d5108-9001-47c6-9796-84893d7244e5"
+      },
+      {
+        "filename": "programming_connector.kicad_sch",
+        "name": "Programming Connector",
+        "uuid": "b636877d-752a-41a6-8565-62b29fe98f71"
       }
     ],
-    "used_designators": "U1,R1-2,IC1-3,C1-4,LED1,BT1",
+    "used_designators": "U1,J1,R1-2,IC1-3,C1-4,LED1,BT1",
     "variants": []
   },
   "sheets": [
@@ -673,6 +678,10 @@
     [
       "9d2d5108-9001-47c6-9796-84893d7244e5",
       "LED"
+    ],
+    [
+      "b636877d-752a-41a6-8565-62b29fe98f71",
+      "Programming Connector"
     ]
   ],
   "text_variables": {},
