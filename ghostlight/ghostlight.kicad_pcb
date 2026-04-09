@@ -80,11 +80,11 @@
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 4)
+			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "ghostlight.drl")
 		)
 	)
 	(footprint "SamacSys_Parts:CAPC1005X55N"

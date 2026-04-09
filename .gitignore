@@ -40,4 +40,4 @@ fp-info-cache
 *.kicad_prl
 
 **/.history/
-*.pdf
+**/ghostlight_outputs/
