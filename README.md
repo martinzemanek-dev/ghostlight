@@ -10,7 +10,7 @@ CR2032 for start. It needs holder at the bottom [Keystone 3000](https://cz.mouse
 [100nF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXza8LoeCVgcc%3D)
 [4.7 kilo ohm](https://cz.mouser.com/ProductDetail/YAGEO/SR0603JR-074R7L?qs=TyBUSTk9pD8f6RpHbu07DQ%3D%3D)
 ## microcontroler
-STM32C011J4M6 (SO8 package) or the STM32C011F4P6
+[STM32C011J4M6](https://cz.mouser.com/ProductDetail/511-STM32C011J4M6) (SO8 package)
 ### programming
 
 ## LED
