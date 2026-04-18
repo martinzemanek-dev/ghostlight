@@ -1,0 +1,3 @@
+../Core/Src/LP5817.c:51:9:LP5817_write_reg	4
+../Core/Src/LP5817.c:74:9:LP5817_init	9
+../Core/Src/LP5817.c:117:9:LP5817_setColor	4

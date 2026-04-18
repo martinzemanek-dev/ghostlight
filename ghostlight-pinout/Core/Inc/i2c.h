@@ -35,7 +35,7 @@ extern "C" {
 extern I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN Private defines */
-
+extern volatile int i2c_busy;
 /* USER CODE END Private defines */
 
 void MX_I2C1_Init(void);

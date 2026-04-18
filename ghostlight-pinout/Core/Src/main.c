@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LP5817.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
