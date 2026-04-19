@@ -21,7 +21,7 @@
 #include "i2c.h"
 
 /* USER CODE BEGIN 0 */
-
+volatile int i2c_busy;
 /* USER CODE END 0 */
 
 I2C_HandleTypeDef hi2c1;

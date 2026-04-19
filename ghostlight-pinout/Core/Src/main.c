@@ -96,20 +96,28 @@ int main(void)
   MX_TIM14_Init();
 
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
-  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
+  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
+  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
 
   uint8_t i2c_err = LP5817_init();
   if (0 != i2c_err)
   {
+	  if (2 == i2c_err)
+	  {
+		  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
+	  }
 	  while (1) {}
   }
 
   //TODO: select color based on value in eeprom
   i2c_err = LP5817_setColor(255, 255, 255);
-  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
   if (0 != i2c_err)
   {
+	  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
+	  if (2 == i2c_err)
+	  {
+		  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
+	  }
 	  while (1) {}
   }
   /* USER CODE END 2 */
@@ -121,7 +129,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_GPIO_TogglePin(LIVE_Pin, LIVE_GPIO_Port);
+	HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
 	HAL_Delay(500);
   }
   /* USER CODE END 3 */

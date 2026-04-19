@@ -33,13 +33,17 @@
 //	---- CODE ----
 
 /*
- * TODO: Read registers
- *	 Should start by sending address with fliped directional bit and register and than wait for bytes with register number + received data
- *	 int LP5817_read_reg()
- * {
- *
- * }
+ * Should start by sending address with fliped directional bit and register and than wait for bytes with register number + received data
  */
+uint8_t LP5817_read_reg(uint8_t reg, uint8_t *buffer)
+{
+	while (i2c_busy)__WFI();
+
+	if (HAL_I2C_Mem_Read(&hi2c1, LP5817_ADDR_READ, reg, I2C_MEMADD_SIZE_8BIT, buffer, 1, 100))
+		return 1;
+	return 0;
+}
+
 
 #define LP5817_REG_MSG_SIZE 2
 /**
@@ -77,7 +81,7 @@ uint8_t LP5817_init()
 	if (0 != LP5817_write_reg(LP5817_REG_RESET_CMD, 0xCC))
 			return 1;
 
-	HAL_Delay(1);
+	HAL_Delay(10);
 
 	//Enable chip
 	if (0 != LP5817_write_reg(LP5817_REG_CHIP_EN, 0x01))
@@ -103,14 +107,18 @@ uint8_t LP5817_init()
 
 	//enable all channels
 	if (0 != LP5817_write_reg(LP5817_REG_DEV_CONFIG_1, 0x07))
-			return 1;
+		return 1;
 
 	//Update chip
 	if (0 != LP5817_write_reg(LP5817_REG_UPDATE_CMD, 0x55))
-			return 1;
+		return 1;
 
-	//TODO: read flags to get if all is ok
-
+	//read flags to get if all is ok
+	uint8_t flag_data = 0;
+	if(0 != LP5817_read_reg(LP5817_REG_FLAG, &flag_data))
+		return 1;
+	if (flag_data != 0)
+		return 2;
 	return 0;
 }
 
@@ -125,7 +133,12 @@ uint8_t LP5817_setColor(uint8_t r, uint8_t g, uint8_t b)
 	if (0 != LP5817_write_reg(LP5817_REG_OUT2_MAN_PWM, b))
 			return 1;
 
-	//TODO: read flags to get if all is ok
+	//read flags to get if all is ok
+	uint8_t flag_data = 0;
+	if(0 != LP5817_read_reg(LP5817_REG_FLAG, &flag_data))
+		return 1;
+	if (flag_data != 0)
+		return 2;
 
 	return 0;
 }
