@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LIVE_Pin GPIO_PIN_8
+#define LIVE_GPIO_Port GPIOA
+#define I2C_ERROR_Pin GPIO_PIN_12
+#define I2C_ERROR_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

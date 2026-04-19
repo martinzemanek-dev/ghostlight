@@ -26,7 +26,6 @@
 
 I2C_HandleTypeDef hi2c1;
 DMA_HandleTypeDef hdma_i2c1_tx;
-volatile int i2c_busy = 0;
 
 /* I2C1 init function */
 void MX_I2C1_Init(void)
