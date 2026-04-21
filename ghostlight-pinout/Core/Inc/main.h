@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define LIVE_GPIO_Port GPIOA
 #define I2C_ERROR_Pin GPIO_PIN_12
 #define I2C_ERROR_GPIO_Port GPIOA
+#define FLAG_Pin GPIO_PIN_13
+#define FLAG_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

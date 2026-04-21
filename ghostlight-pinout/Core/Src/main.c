@@ -1,20 +1,20 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2026 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2026 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -69,7 +69,24 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	void handleI2CErr(uint8_t error_code) {
+		// Check if any error occurred (Bit 0 is our 'Error Present' marker)
+		if (error_code) {
+			// Bit 1 of error_code corresponds to LP5817 Bit 0 (TSD)
+			/*if (error_code & 2) {
+				HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
+			}
 
+			// Bit 2 of error_code corresponds to LP5817 Bit 1 (LED Short)
+			if (error_code & 4) {
+				HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
+
+			*/
+			// If it was just a raw I2C communication error (code was 1),
+			// we might want a different indication, but we always end here:
+			while (1) {}
+		}
+	}
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -94,44 +111,31 @@ int main(void)
   MX_I2C1_Init();
   MX_ADC1_Init();
   MX_TIM14_Init();
-
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
-  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
+	HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
+	HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
+	HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, RESET);
 
-  uint8_t i2c_err = LP5817_init();
-  if (0 != i2c_err)
-  {
-	  if (2 == i2c_err)
-	  {
-		  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
-	  }
-	  while (1) {}
-  }
-
-  //TODO: select color based on value in eeprom
-  i2c_err = LP5817_setColor(255, 255, 255);
-  if (0 != i2c_err)
-  {
-	  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
-	  if (2 == i2c_err)
-	  {
-		  HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
-	  }
-	  while (1) {}
-  }
+	uint8_t i2c_err = LP5817_init();
+	HAL_Delay(1);
+	handleI2CErr(i2c_err);
+/*
+	HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
+	HAL_Delay(500);
+	//TODO: select color based on value in eeprom
+	i2c_err = LP5817_setColor(0, 0, 255);
+	handleI2CErr(i2c_err);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
-	HAL_Delay(500);
-  }
+		HAL_GPIO_TogglePin(FLAG_GPIO_Port, FLAG_Pin);
+		HAL_Delay(2000);
+	}
   /* USER CODE END 3 */
 }
 
@@ -184,11 +188,10 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1) {
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 #ifdef USE_FULL_ASSERT
