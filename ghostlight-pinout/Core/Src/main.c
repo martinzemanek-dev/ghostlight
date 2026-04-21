@@ -119,11 +119,11 @@ int main(void)
 	uint8_t i2c_err = LP5817_init();
 	HAL_Delay(1);
 	handleI2CErr(i2c_err);
-/*
+
 	HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
 	HAL_Delay(500);
 	//TODO: select color based on value in eeprom
-	i2c_err = LP5817_setColor(0, 0, 255);
+	i2c_err = LP5817_setColor(255, 255, 255);
 	handleI2CErr(i2c_err);
   /* USER CODE END 2 */
 
