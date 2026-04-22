@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "ghostlight.drl",
       "specctra_dsn": "",
       "vrml": ""
     },
