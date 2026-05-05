@@ -46,8 +46,8 @@ uint8_t LP5817_read_reg(uint8_t reg, uint8_t *buffer) {
 	selectRegBuffer[0] = reg;
 
 	// 2. Transmit the register address using DMA
-	if (HAL_I2C_Master_Transmit_DMA(&hi2c1, LP5817_ADDR_WRITE, selectRegBuffer, LP5817_READ_REQ_MSG_SIZE)
-			!= HAL_OK) {
+	if (HAL_I2C_Master_Transmit_DMA(&hi2c1, LP5817_ADDR_WRITE, selectRegBuffer,
+			LP5817_READ_REQ_MSG_SIZE) != HAL_OK) {
 		i2c_busy = 0;
 		return 1; // Likely returns HAL_BUSY here if the bus is stuck
 	}
@@ -61,7 +61,6 @@ uint8_t LP5817_read_reg(uint8_t reg, uint8_t *buffer) {
 	i2c_busy = 1;
 	// 4. Mandatory Bus Free Time (t_BUF)
 	// The LP5817 needs time to process the address before the restart
-
 
 	// 5. Receive the data byte
 	if (HAL_I2C_Master_Receive_DMA(&hi2c1, LP5817_ADDR_READ, buffer, 1)
@@ -107,68 +106,87 @@ uint8_t LP5817_write_reg(uint8_t reg, uint8_t value) {
 
 uint8_t LP5817_read_flags() {
 	//read flags to get if all is ok
-	uint8_t flag_data = 0;
+	static uint8_t flag_data = 0;
 	if (0 != LP5817_read_reg(LP5817_REG_FLAG, &flag_data))
 		return 1;
 	if (flag_data != 0)
-		return (flag_data << 1) | 1;
+		return (flag_data << 2) | 1;
 	return 0;
 }
 
+uint8_t LP5817_read_flags_with_reset()
+{
+	int err = LP5817_read_flags();
+
+	for (int i = 0;(i < 10) && (err != 0);i++)
+	{
+		HAL_Delay(1);
+		//reset bits
+		LP5817_write_reg(LP5817_REG_FLAG_CLR_CMD, 0x03);
+		HAL_Delay(1);
+		err = LP5817_read_flags();
+	}
+	return err;
+
+}
 uint8_t LP5817_init() {
 	//Reset chip
-
-	if (LP5817_write_reg(LP5817_REG_RESET_CMD, 0xCC))
-		return 1;
+	int err = LP5817_write_reg(LP5817_REG_RESET_CMD, 0xCC);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	//Enable chip
-	if (LP5817_write_reg(LP5817_REG_CHIP_EN, 0x01))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_CHIP_EN, 0x01);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	//set global current limiter to 25.5mA
-	if (LP5817_write_reg(LP5817_REG_DEV_CONFIG_0, 0x00))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_DEV_CONFIG_0, 0x00);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	//set individual limiters
 	// X to 20mA
-	if (0 != LP5817_write_reg(LP5817_REG_OUT0_DC, 0xC8))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_OUT0_DC, 0xC8);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	// X to 20mA
-	if (0 != LP5817_write_reg(LP5817_REG_OUT1_DC, 0xC8))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_OUT1_DC, 0xC8);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	// X to 20mA
-	if (0 != LP5817_write_reg(LP5817_REG_OUT2_DC, 0xC8))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_OUT2_DC, 0xC8);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	//enable all channels
-	if (0 != LP5817_write_reg(LP5817_REG_DEV_CONFIG_1, 0x07))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_DEV_CONFIG_1, 0x07);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
 	//Update chip
-	if (0 != LP5817_write_reg(LP5817_REG_UPDATE_CMD, 0x55))
-		return 1;
+	err = LP5817_write_reg(LP5817_REG_UPDATE_CMD, 0x55);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
-	uint8_t verifyBuff = 0;
+	static uint8_t verifyBuff = 0;
 
-	if (LP5817_read_reg(LP5817_REG_CHIP_EN, &verifyBuff))
-		return 1;
-
-	if (verifyBuff != 0x01)
-		return 1;
-
+	err = LP5817_read_reg(LP5817_REG_CHIP_EN, &verifyBuff);
+	if (err != HAL_OK)
+		return err;
 	HAL_Delay(1);
 
-	return LP5817_read_flags();
+	return LP5817_read_flags_with_reset();
 }
 
 uint8_t LP5817_setColor(uint8_t r, uint8_t g, uint8_t b) {
