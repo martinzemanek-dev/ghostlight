@@ -40,3 +40,14 @@ fp-info-cache
 *.kicad_prl
 
 **/.history/
+**/ghostlight_outputs/
+*.o
+*.elf
+*.hex
+*.su
+*.cyclo
+*.d
+*.list
+*.mk
+**/makefile
+

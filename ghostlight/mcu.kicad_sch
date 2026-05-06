@@ -1,0 +1,1970 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "321f8257-19e4-472d-a1c2-96789ba512b7")
+	(paper "A4")
+	(lib_symbols
+		(symbol "SamacSys_Parts:MLASU105SB7104KFNB25"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 8.89 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "MLASU105SB7104KFNB25"
+				(at 8.89 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "CAPC1005X55N"
+				(at 8.89 -96.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/eu/specSheet?pn=MLASU105SB7104KFNB25"
+				(at 8.89 -196.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 0.1uF X7R 0402 10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "0.55"
+				(at 8.89 -396.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "963-MLASU105SB7104KF"
+				(at 8.89 -496.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=tlsG%2FOw5FFiZRrLimwh8wQ%3D%3D"
+				(at 8.89 -596.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "TAIYO YUDEN"
+				(at 8.89 -696.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MLASU105SB7104KFNB25"
+				(at 8.89 -796.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "MLASU105SB7104KFNB25_1_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.588 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 2.54) (xy 5.588 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 2.54) (xy 7.112 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SamacSys_Parts:SR0603JR-074R7L"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 13.97 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "SR0603JR-074R7L"
+				(at 13.97 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "RESC1608X55N"
+				(at 13.97 -96.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" ""
+				(at 13.97 -196.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Thick Film Resistors - SMD 4.7 Ohms 1/10 W 0603 5 % AEC-Q200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "0.55"
+				(at 13.97 -396.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "603-SR0603JR-074R7L"
+				(at 13.97 -496.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/YAGEO/SR0603JR-074R7L?qs=TyBUSTk9pD8f6RpHbu07DQ%3D%3D"
+				(at 13.97 -596.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "Yageo Group"
+				(at 13.97 -696.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SR0603JR-074R7L"
+				(at 13.97 -796.19 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "SR0603JR-074R7L_1_1"
+				(rectangle
+					(start 5.08 1.27)
+					(end 12.7 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SamacSys_Parts:STM32C011J4M6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "IC"
+				(at 74.93 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "STM32C011J4M6"
+				(at 74.93 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOIC127P600X175-8N"
+				(at 74.93 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011d6.pdf"
+				(at 74.93 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Mainstream Arm Cortex-M0+ MCU with 16 Kbytes of Flash memory, 6 Kbytes RAM, 48 MHz CPU, 2x USART, timers, ADC, comm. I/F, 2-3.6V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "1.75"
+				(at 74.93 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "511-STM32C011J4M6"
+				(at 74.93 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32C011J4M6?qs=IPgv5n7u5QZcnyi2Eft7Zg%3D%3D"
+				(at 74.93 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "STMicroelectronics"
+				(at 74.93 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "STM32C011J4M6"
+				(at 74.93 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "STM32C011J4M6_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 73.66 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "PB7/PC14-OSCX_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "VDD/VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "VSS/VSSA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "PA0/PA1/PA2/PF2-NRST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 78.74 -7.62 180)
+					(length 5.08)
+					(name "PA11[PA9]/PA8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 78.74 -5.08 180)
+					(length 5.08)
+					(name "PA12[PA10]"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 78.74 -2.54 180)
+					(length 5.08)
+					(name "PA13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 78.74 0 180)
+					(length 5.08)
+					(name "PB6/PA14-BOOT0/PC15-OSCX_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 171.45 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3224f540-bfe0-47cf-9900-2c55f9d1e122")
+	)
+	(junction
+		(at 54.61 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a661062-8223-4c8f-8f05-4038c5297695")
+	)
+	(junction
+		(at 59.69 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4be599ca-406c-4501-a942-962f5a4a6d11")
+	)
+	(junction
+		(at 54.61 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7391468d-a66a-4b45-83a3-ec6860b02887")
+	)
+	(junction
+		(at 54.61 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8691777a-ceff-4509-b0d1-8b4dce6cf78e")
+	)
+	(junction
+		(at 166.37 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9989baed-b829-4808-a643-909b65c12d9c")
+	)
+	(junction
+		(at 171.45 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6459e9c-c7e4-49ab-8785-ae81fd5a6de7")
+	)
+	(junction
+		(at 41.91 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4fdf31-4d62-4587-a77a-76268a1b8c87")
+	)
+	(junction
+		(at 48.26 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c58b9d79-bbf2-4f39-9862-4fc41c4e8753")
+	)
+	(wire
+		(pts
+			(xy 64.77 34.29) (xy 171.45 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02449e70-ad5a-4dbd-807a-3f9c5231ed71")
+	)
+	(wire
+		(pts
+			(xy 166.37 63.5) (xy 166.37 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b762f4-e2fd-44e8-8900-89c5a7a7e897")
+	)
+	(wire
+		(pts
+			(xy 54.61 39.37) (xy 54.61 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1117ca74-4183-4775-b0bd-28f5ab98dbbe")
+	)
+	(wire
+		(pts
+			(xy 146.05 63.5) (xy 166.37 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e72dbdf-20e7-4876-bf49-f7b7207981e7")
+	)
+	(wire
+		(pts
+			(xy 152.4 68.58) (xy 146.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c67cdb2-1650-49bd-b5de-8832ad7d0bee")
+	)
+	(wire
+		(pts
+			(xy 171.45 46.99) (xy 171.45 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b44d44e-47a8-4ed8-895b-eab50d011d71")
+	)
+	(wire
+		(pts
+			(xy 247.65 68.58) (xy 247.65 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4408c640-f18b-4f38-9082-5d8868ae1e40")
+	)
+	(wire
+		(pts
+			(xy 25.4 39.37) (xy 54.61 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "453d408e-7858-4662-a001-013e6712c25c")
+	)
+	(wire
+		(pts
+			(xy 247.65 68.58) (xy 166.37 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45f7c39a-f007-4212-875e-394010c4364c")
+	)
+	(wire
+		(pts
+			(xy 59.69 66.04) (xy 59.69 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47815dc3-955f-412c-851f-134545c08443")
+	)
+	(wire
+		(pts
+			(xy 162.56 46.99) (xy 171.45 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55345018-fbb4-43d9-aaa3-a243bf18e43b")
+	)
+	(wire
+		(pts
+			(xy 59.69 66.04) (xy 67.31 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5faecc90-bb18-473d-bc2a-829ff1c2a0c2")
+	)
+	(wire
+		(pts
+			(xy 48.26 68.58) (xy 48.26 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636d02ab-df43-4362-9f18-38f8e11526f5")
+	)
+	(wire
+		(pts
+			(xy 162.56 66.04) (xy 162.56 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c9dd6c6-140e-4e77-a7c1-49daceb49563")
+	)
+	(wire
+		(pts
+			(xy 54.61 52.07) (xy 54.61 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb4df60-7479-408d-a67c-5e76cfa08468")
+	)
+	(wire
+		(pts
+			(xy 41.91 55.88) (xy 48.26 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d34246f-55ed-4de4-b1eb-4288cf359ba1")
+	)
+	(wire
+		(pts
+			(xy 166.37 63.5) (xy 171.45 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80d9485d-55e4-4a95-8970-0049ea801255")
+	)
+	(wire
+		(pts
+			(xy 64.77 34.29) (xy 64.77 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82b300b5-c721-49b7-869a-0b62efd779dd")
+	)
+	(wire
+		(pts
+			(xy 237.49 72.39) (xy 162.56 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "830e9f85-90f0-458c-bf46-0fed61be3cca")
+	)
+	(wire
+		(pts
+			(xy 54.61 66.04) (xy 59.69 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b82826a-2486-424a-869c-7d57ad71258a")
+	)
+	(wire
+		(pts
+			(xy 146.05 66.04) (xy 162.56 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94609443-34cc-483e-8869-c4188ab41a9c")
+	)
+	(wire
+		(pts
+			(xy 54.61 57.15) (xy 144.78 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95f07ad6-9321-488a-ad64-675cbd419005")
+	)
+	(wire
+		(pts
+			(xy 64.77 63.5) (xy 67.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a967496-b9e3-4b8c-a826-e6f96e3e8cb0")
+	)
+	(wire
+		(pts
+			(xy 171.45 57.15) (xy 171.45 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab4a9705-32a1-4584-805d-7aa8f4e6f4bc")
+	)
+	(wire
+		(pts
+			(xy 237.49 72.39) (xy 237.49 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab817e35-4695-431d-bc28-3a161dfb9ed8")
+	)
+	(wire
+		(pts
+			(xy 48.26 68.58) (xy 67.31 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd35119-7c71-4d4d-85b4-3e4e0e279f5e")
+	)
+	(wire
+		(pts
+			(xy 25.4 55.88) (xy 41.91 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0bc34e-5d9c-43a4-bab5-794518edb761")
+	)
+	(wire
+		(pts
+			(xy 171.45 34.29) (xy 234.95 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50dc195-cd6d-4821-844c-0375fda9ac53")
+	)
+	(wire
+		(pts
+			(xy 48.26 55.88) (xy 48.26 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3f49fa-add9-4396-a93b-e6fb5b50f0d7")
+	)
+	(wire
+		(pts
+			(xy 67.31 71.12) (xy 67.31 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf1c27d-499a-413f-9a1f-eaa5138070af")
+	)
+	(wire
+		(pts
+			(xy 171.45 63.5) (xy 234.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc813a6f-815f-4923-95fd-aca9cc08663a")
+	)
+	(wire
+		(pts
+			(xy 146.05 142.24) (xy 146.05 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e03a9bec-c81e-404c-816d-a26f3baf6bee")
+	)
+	(wire
+		(pts
+			(xy 41.91 52.07) (xy 41.91 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9a5eb95-2bdc-4a2a-bbb7-2897347eec97")
+	)
+	(wire
+		(pts
+			(xy 54.61 46.99) (xy 144.78 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee30fdf8-0629-4fa3-9bd0-86f24d19dda7")
+	)
+	(wire
+		(pts
+			(xy 162.56 57.15) (xy 171.45 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e34bf7-55a6-4bfc-9a69-cac3ec3692bf")
+	)
+	(wire
+		(pts
+			(xy 54.61 46.99) (xy 54.61 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e541ca-1724-49b0-aa69-f379113342ec")
+	)
+	(wire
+		(pts
+			(xy 54.61 57.15) (xy 54.61 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf42c1d-3606-46e9-bd1a-8b6f7f8b7487")
+	)
+	(wire
+		(pts
+			(xy 152.4 142.24) (xy 152.4 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fccfd64c-8cde-426b-bbd9-f3d5ee89ef5a")
+	)
+	(global_label "ST_LINK_SWDIO"
+		(shape input)
+		(at 237.49 146.05 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0a2c94f5-6395-4628-9bdc-9eaf1f63acf6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.49 163.2471 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 25.4 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14295867-3474-44d4-9262-0deae0d75dd0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.3024 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ST_LINK_GND"
+		(shape input)
+		(at 48.26 165.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a3c894c-04e2-45cf-ad24-e4f69b5ed0a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 48.26 180.3014 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SCK"
+		(shape input)
+		(at 234.95 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3d3eabfa-8601-4c50-a127-124b455d2107")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.6847 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "I2C_ERR"
+		(shape input)
+		(at 152.4 142.24 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50b7f950-ddf2-41e5-b9ce-5d34c4cfe6d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 152.9661 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ST_LINK_RST{slash}RST"
+		(shape input)
+		(at 67.31 165.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55f00002-4da8-4a64-a1cb-3d03bf9f29f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.31 184.6556 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 234.95 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "676d02a4-4069-4e44-815b-acdf4c14a7b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.5033 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ST_LINK_VDD"
+		(shape input)
+		(at 59.69 165.1 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89e526c9-9fb5-4392-8640-a418c00d630f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.69 180.0595 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 25.4 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8ba46dab-c31f-4eff-ad9e-592cad9bf77c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.5443 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "LIVE"
+		(shape input)
+		(at 146.05 142.24 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0c81b69-2786-4e4f-92b7-488211fdbca9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.05 142.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "ST_LIKN_SWCLK"
+		(shape input)
+		(at 247.65 146.05 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0404ef8-69bf-428a-9f87-fcdd2f591ba6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.65 163.6099 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SR0603JR-074R7L")
+		(at 144.78 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01c4da41-305b-4821-ae70-590acdec048f")
+		(property "Reference" "R2"
+			(at 153.67 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SR0603JR-074R7L"
+			(at 153.67 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RESC1608X55N"
+			(at 158.75 153.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 253.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Thick Film Resistors - SMD 4.7 Ohms 1/10 W 0603 5 % AEC-Q200"
+			(at 144.78 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.55"
+			(at 158.75 453.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "603-SR0603JR-074R7L"
+			(at 158.75 553.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/YAGEO/SR0603JR-074R7L?qs=TyBUSTk9pD8f6RpHbu07DQ%3D%3D"
+			(at 158.75 653.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo Group"
+			(at 158.75 753.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SR0603JR-074R7L"
+			(at 158.75 853.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "b24944ba-10d0-414b-97ec-d137843dfac3")
+		)
+		(pin "2"
+			(uuid "fcfeb128-1154-4ce4-bea5-28d4c1642e32")
+		)
+		(instances
+			(project "ghostlight"
+				(path "/5f056e1d-abf2-4a9a-bdbb-da0483468ab5"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SR0603JR-074R7L")
+		(at 144.78 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24034839-3886-4586-9a5e-e4839476fb57")
+		(property "Reference" "R1"
+			(at 153.67 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SR0603JR-074R7L"
+			(at 153.67 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RESC1608X55N"
+			(at 158.75 143.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 243.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Thick Film Resistors - SMD 4.7 Ohms 1/10 W 0603 5 % AEC-Q200"
+			(at 144.78 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.55"
+			(at 158.75 443.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "603-SR0603JR-074R7L"
+			(at 158.75 543.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/YAGEO/SR0603JR-074R7L?qs=TyBUSTk9pD8f6RpHbu07DQ%3D%3D"
+			(at 158.75 643.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo Group"
+			(at 158.75 743.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SR0603JR-074R7L"
+			(at 158.75 843.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "b5f4cbfd-aa7b-43ce-a2e0-82654e24e97b")
+		)
+		(pin "2"
+			(uuid "85a54c59-16f0-4447-a5d9-4e58940ad503")
+		)
+		(instances
+			(project "ghostlight"
+				(path "/5f056e1d-abf2-4a9a-bdbb-da0483468ab5"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:MLASU105SB7104KFNB25")
+		(at 54.61 52.07 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79dc1590-6d91-402b-852c-921ac77633c0")
+		(property "Reference" "C3"
+			(at 48.26 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MLASU105SB7104KFNB25"
+			(at 48.26 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CAPC1005X55N"
+			(at 45.72 -44.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/eu/specSheet?pn=MLASU105SB7104KFNB25"
+			(at 45.72 -144.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 0.1uF X7R 0402 10%"
+			(at 54.61 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "0.55"
+			(at 45.72 -344.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "963-MLASU105SB7104KF"
+			(at 45.72 -444.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=tlsG%2FOw5FFiZRrLimwh8wQ%3D%3D"
+			(at 45.72 -544.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "TAIYO YUDEN"
+			(at 45.72 -644.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU105SB7104KFNB25"
+			(at 45.72 -744.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "5038e8a3-1a2a-4d59-85c0-a0c49a154297")
+		)
+		(pin "2"
+			(uuid "c33be36d-4e14-4dd5-b582-d41639d0bc2d")
+		)
+		(instances
+			(project "ghostlight"
+				(path "/5f056e1d-abf2-4a9a-bdbb-da0483468ab5"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:STM32C011J4M6")
+		(at 67.31 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a71dd507-3965-4f47-8fa5-1ac9d78d68d1")
+		(property "Reference" "IC1"
+			(at 106.68 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STM32C011J4M6"
+			(at 106.68 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SOIC127P600X175-8N"
+			(at 142.24 158.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32c011d6.pdf"
+			(at 142.24 258.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Mainstream Arm Cortex-M0+ MCU with 16 Kbytes of Flash memory, 6 Kbytes RAM, 48 MHz CPU, 2x USART, timers, ADC, comm. I/F, 2-3.6V"
+			(at 67.31 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.75"
+			(at 142.24 458.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "511-STM32C011J4M6"
+			(at 142.24 558.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32C011J4M6?qs=IPgv5n7u5QZcnyi2Eft7Zg%3D%3D"
+			(at 142.24 658.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "STMicroelectronics"
+			(at 142.24 758.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "STM32C011J4M6"
+			(at 142.24 858.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "4"
+			(uuid "69e566eb-166c-465d-ba5e-c71c90b91340")
+		)
+		(pin "7"
+			(uuid "172a6509-fa78-4365-9e5f-332059fdff97")
+		)
+		(pin "2"
+			(uuid "dd83d82c-e9d9-4f19-ba76-8711f3a4175e")
+		)
+		(pin "1"
+			(uuid "509a55a4-93fc-4787-9712-fe056d16892e")
+		)
+		(pin "3"
+			(uuid "b3fea429-304d-4e5b-9b79-bac71810ddcc")
+		)
+		(pin "5"
+			(uuid "a13740e4-6cde-413e-849e-abae6c10487b")
+		)
+		(pin "6"
+			(uuid "64b888d8-cf62-4640-b77e-1952c6cc2675")
+		)
+		(pin "8"
+			(uuid "9233cf3e-ccf2-42fa-9099-f42a360c20c9")
+		)
+		(instances
+			(project "ghostlight"
+				(path "/5f056e1d-abf2-4a9a-bdbb-da0483468ab5"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "2")
+		)
+	)
+	(embedded_fonts no)
+)
