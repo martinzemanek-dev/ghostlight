@@ -153,8 +153,46 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
-		HAL_Delay(2000);
+		int i = 0;
+		for (; i < 255;i++)
+		{
+			LP5817_setColor(i, 0, 0);
+			HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
+			HAL_Delay(500);
+		}
+		for (; i != 0; i--)
+		{
+			HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
+			LP5817_setColor(i, 0, 0);
+			HAL_Delay(500);
+		}
+		HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
+		for (; i < 255;i++)
+		{
+			HAL_GPIO_TogglePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin);
+			LP5817_setColor(0, i, 0);
+			HAL_Delay(500);
+		}
+		for (; i != 0; i--)
+		{
+			HAL_GPIO_TogglePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin);
+			LP5817_setColor(0, i, 0);
+			HAL_Delay(500);
+		}
+		HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
+		for (; i < 255;i++)
+		{
+			HAL_GPIO_TogglePin(FLAG_GPIO_Port, FLAG_Pin);
+			LP5817_setColor(0, 0, i);
+			HAL_Delay(500);
+		}
+		for (; i != 0; i--)
+		{
+			HAL_GPIO_TogglePin(FLAG_GPIO_Port, FLAG_Pin);
+			LP5817_setColor(0, 0, i);
+			HAL_Delay(500);
+		}
+		HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, RESET);
 	}
   /* USER CODE END 3 */
 }
