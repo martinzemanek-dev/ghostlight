@@ -23,6 +23,7 @@
 #include "i2c.h"
 #include "tim.h"
 #include "gpio.h"
+#include "flash.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -62,30 +63,21 @@ void handleI2CErr(uint8_t error_code) {
 	HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
 	// Check if any error occurred (Bit 0 is our 'Error Present' marker)
 	if (error_code) {
-		if (error_code == HAL_ERROR)
-		{
+		if (error_code == HAL_ERROR) {
 			HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
-		}
-		else if (error_code == HAL_BUSY)
-		{
+		} else if (error_code == HAL_BUSY) {
 			// Bit 2 of error_code corresponds to LP5817 Bit 1 (LED Short)
 			HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
-		}
-		else if (error_code == HAL_TIMEOUT)
-		{
+		} else if (error_code == HAL_TIMEOUT) {
 			HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
 			HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
-		}
-		else
-		{
+		} else {
 			HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, SET);
 			//error is in flags from
-			if (0 != (error_code & (1 << 2)))
-			{
+			if (0 != (error_code & (1 << 2))) {
 				HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
 			}
-			if (0 != (error_code & (1 << 3)))
-			{
+			if (0 != (error_code & (1 << 3))) {
 				HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
 			}
 		}
@@ -99,102 +91,119 @@ void handleI2CErr(uint8_t error_code) {
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
-int main(void)
-{
+ * @brief  The application entry point.
+ * @retval int
+ */
+int main(void) {
 
-  /* USER CODE BEGIN 1 */
+	/* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
+	/* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+	/* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+	HAL_Init();
 
-  /* USER CODE BEGIN Init */
+	/* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+	/* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+	/* Configure the system clock */
+	SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+	/* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+	/* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_DMA_Init();
-  MX_I2C1_Init();
-  MX_ADC1_Init();
-  MX_TIM14_Init();
-  /* USER CODE BEGIN 2 */
+	/* Initialize all configured peripherals */
+	MX_GPIO_Init();
+	MX_DMA_Init();
+	MX_I2C1_Init();
+	MX_ADC1_Init();
+	MX_TIM14_Init();
+	/* USER CODE BEGIN 2 */
+
 	HAL_GPIO_WritePin(LIVE_GPIO_Port, LIVE_Pin, RESET);
 	HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, RESET);
 	HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, RESET);
 
 	uint8_t i2c_err = LP5817_init();
-	 HAL_Delay(1);
-	 handleI2CErr(i2c_err);
+	HAL_Delay(1);
+	handleI2CErr(i2c_err);
 
+	HAL_Delay(500);
+	//TODO: select color based on value in eeprom
+	if (initPersistentData() != HAL_OK)
+	{
+		i2c_err = LP5817_setColor(255, 255, 255);
+		handleI2CErr(i2c_err);
+	}
+	else
+	{
+		switch (getCycleCount() % 3)
+		{
+		case 0:
+			i2c_err = LP5817_setColor(0, 10, 100);
+			handleI2CErr(i2c_err);
+			break;
+		case 1:
+			i2c_err = LP5817_setColor(100, 0, 0);
+			handleI2CErr(i2c_err);
+			break;
+		case 2:
+			i2c_err = LP5817_setColor(80, 120, 0);
+			handleI2CErr(i2c_err);
+			break;
+		};
+	}
+	/* USER CODE END 2 */
 
-	 HAL_Delay(500);
-	 //TODO: select color based on value in eeprom
-	 i2c_err = LP5817_setColor(255, 255, 255);
-	 handleI2CErr(i2c_err);
-  /* USER CODE END 2 */
+	/* Infinite loop */
+	/* USER CODE BEGIN WHILE */
+	while (1) {
+		/* USER CODE END WHILE */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-	while(1) {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+		/* USER CODE BEGIN 3 */
 		HAL_GPIO_TogglePin(LIVE_GPIO_Port, LIVE_Pin);
 		HAL_Delay(2000);
 	}
-  /* USER CODE END 3 */
+	/* USER CODE END 3 */
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+ * @brief System Clock Configuration
+ * @retval None
+ */
+void SystemClock_Config(void) {
+	RCC_OscInitTypeDef RCC_OscInitStruct = { 0 };
+	RCC_ClkInitTypeDef RCC_ClkInitStruct = { 0 };
 
-  __HAL_FLASH_SET_LATENCY(FLASH_LATENCY_0);
+	__HAL_FLASH_SET_LATENCY(FLASH_LATENCY_0);
 
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV4;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
+	/** Initializes the RCC Oscillators according to the specified parameters
+	 * in the RCC_OscInitTypeDef structure.
+	 */
+	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+	RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+	RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV4;
+	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+		Error_Handler();
+	}
 
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
-  RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
+	/** Initializes the CPU, AHB and APB buses clocks
+	 */
+	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+			| RCC_CLOCKTYPE_PCLK1;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+	RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
+	RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV1;
+	RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-  {
-    Error_Handler();
-  }
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK) {
+		Error_Handler();
+	}
 }
 
 /* USER CODE BEGIN 4 */
@@ -202,17 +211,16 @@ void SystemClock_Config(void)
 /* USER CODE END 4 */
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
+void Error_Handler(void) {
+	/* USER CODE BEGIN Error_Handler_Debug */
 	/* User can add his own implementation to report the HAL error return state */
 	__disable_irq();
 	while (1) {
 	}
-  /* USER CODE END Error_Handler_Debug */
+	/* USER CODE END Error_Handler_Debug */
 }
 #ifdef USE_FULL_ASSERT
 /**
