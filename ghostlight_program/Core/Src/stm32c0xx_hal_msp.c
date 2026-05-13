@@ -71,6 +71,8 @@ void HAL_MspInit(void)
 
   /* System interrupt init*/
 
+  HAL_SYSCFG_EnableRemap(SYSCFG_REMAP_PA11);
+
   /* USER CODE BEGIN MspInit 1 */
 
   /* USER CODE END MspInit 1 */
