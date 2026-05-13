@@ -671,7 +671,7 @@
         "uuid": "b636877d-752a-41a6-8565-62b29fe98f71"
       }
     ],
-    "used_designators": "U1,BLUE1,J1,R1-2,IC1-3,C1-4,LED1,BT1,GREEN1,RED1",
+    "used_designators": "U1,BLUE1,J1,R1-2,IC1-3,C1-4,LED1,BT1,GREEN1,RED1,S1",
     "variants": []
   },
   "sheets": [
