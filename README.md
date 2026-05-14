@@ -16,6 +16,9 @@ CR2032 for start. It needs holder at the bottom [BAT-HLD-001](https://cz.mouser.
 ## LED
 ### LED control
 [LP5817](https://cz.mouser.com/new/texas-instruments/ti-lp5817-3-channel-rgb-led-driver/) seems to be a good way to do it.
-It will connect to u-controler to microcontroler.
+It will connect to u-controler to microcontroler. Communicates on I2C
 ### LED component
 While being small enough the [SB0606WC02-RGB](https://cz.mouser.com/ProductDetail/VCC/SB0606WC02-RGB?qs=rQFj71Wb1eX6WH%252BB20VtTw%3D%3D). Seems to be small and powered by 3V.
+
+## Accelerometer
+For the control purposes I think the best solution will be an accelerometer. From the research the [LIS3DHTR](https://cz.mouser.com/ProductDetail/511-LIS3DHTR) seems to be a grat opinion. Its povered by up to 3.6V so the LDO should supply sufficient and safe power. It also communicates over I2C alongside LP5817 and doesn't collide in address. It will take over last free pins for interrupts. It also provides three analog outpusts, which can substitute the pins on the programming Ring for debuginng.
