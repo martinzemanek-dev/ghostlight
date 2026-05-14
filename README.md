@@ -7,7 +7,7 @@ CR2032 for start. It needs holder at the bottom [BAT-HLD-001](https://cz.mouser.
 ### miscelenious
 [1kF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MBASG168AB7105KTNA01?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXWJL8eB%2Fc1Uk%3D)
 [100nF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXza8LoeCVgcc%3D)
-[10uF]
+[10uF](https://cz.mouser.com/ProductDetail/Murata-Electronics/GRM155C80G106ME18D?qs=doiCPypUmgHaqNm%2FsBDkxw%3D%3D)
 [4.7 kilo ohm](https://www.gme.cz/v/1496357/yageo-r0603-4k7-01w-5-smd-rezistor)
 ### regulator
 [MCP1700T-3302E/TT](https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP1700T-3302E-TTVAO?qs=5aG0NVq1C4y9x%252BiC%252BXtIqg%3D%3D)
