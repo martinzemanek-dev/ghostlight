@@ -139,7 +139,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -152,7 +152,7 @@
 			)
 		)
 		(property "Mouser Part Number" "963-MLASU105SB7104KF"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -165,7 +165,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=tlsG%2FOw5FFiZRrLimwh8wQ%3D%3D"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -178,7 +178,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TAIYO YUDEN"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -191,7 +191,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MLASU105SB7104KFNB25"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -215,24 +215,14 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 0.91 0.46)
-			(end -0.91 0.46)
+			(start -0.91 -0.46)
+			(end 0.91 -0.46)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b10562e8-020f-4737-bc18-b671ef3d8489")
-		)
-		(fp_line
-			(start 0.91 -0.46)
-			(end 0.91 0.46)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e76b0d3b-94d7-4223-a856-acbfba54b6eb")
+			(uuid "6b167bfe-38b4-494a-9af0-874fe6dd8ada")
 		)
 		(fp_line
 			(start -0.91 0.46)
@@ -245,34 +235,34 @@
 			(uuid "48637237-f732-448a-bb85-71cefff71909")
 		)
 		(fp_line
-			(start -0.91 -0.46)
-			(end 0.91 -0.46)
+			(start 0.91 -0.46)
+			(end 0.91 0.46)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6b167bfe-38b4-494a-9af0-874fe6dd8ada")
+			(uuid "e76b0d3b-94d7-4223-a856-acbfba54b6eb")
 		)
 		(fp_line
-			(start 0.5 0.25)
-			(end -0.5 0.25)
+			(start 0.91 0.46)
+			(end -0.91 0.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b10562e8-020f-4737-bc18-b671ef3d8489")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "a3424df1-a4dd-494c-a5aa-7ac9f1bde66e")
-		)
-		(fp_line
-			(start 0.5 -0.25)
-			(end 0.5 0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2ec349a9-f3ef-4b58-b35a-6e2db546157d")
+			(uuid "8fa2bd34-6d74-4472-b57d-d01138e3fe1b")
 		)
 		(fp_line
 			(start -0.5 0.25)
@@ -285,14 +275,24 @@
 			(uuid "4a2197b9-c637-4583-8b6e-d917c17b996e")
 		)
 		(fp_line
-			(start -0.5 -0.25)
-			(end 0.5 -0.25)
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "8fa2bd34-6d74-4472-b57d-d01138e3fe1b")
+			(uuid "2ec349a9-f3ef-4b58-b35a-6e2db546157d")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a3424df1-a4dd-494c-a5aa-7ac9f1bde66e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 2 0 0)
@@ -306,7 +306,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.46 0 180)
+			(at -0.46 0)
 			(size 0.6 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -315,7 +315,7 @@
 			(uuid "5b814ecf-e279-4986-86ee-1cd46c472ddd")
 		)
 		(pad "2" smd rect
-			(at 0.46 0 180)
+			(at 0.46 0)
 			(size 0.6 0.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "3.3V")
@@ -343,7 +343,7 @@
 		(descr "DRL0008A_2025")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC3"
-			(at 0 1.5 90)
+			(at 0 1.5 0)
 			(layer "F.SilkS")
 			(uuid "d3802dc5-5ff4-4446-84f9-cd5a1a9b5a9c")
 			(effects
@@ -354,7 +354,7 @@
 			)
 		)
 		(property "Value" "LP5817DRLR"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a190bb4f-7703-49ed-b2bc-31d01824bdd4")
@@ -366,7 +366,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp5817.pdf?ts=1745802317799&ref_url=https%253A%252F%252Fwww.ti.com%252Fko-kr%252Fpower-management%252Fled-drivers%252Fproducts.html"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e43f00ed-b7c9-4be3-aa80-e59d6be12c06")
@@ -377,7 +377,7 @@
 			)
 		)
 		(property "Description" "LED Driver IC 3 Output Linear Constant Current Analog, PWM Dimming 51mA SOT-583 0V ~ 5.5V -40C ~ 125C (TJ) 6MHz"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "31f9a925-f5a4-4189-9cab-bd13dbcab325")
@@ -388,7 +388,7 @@
 			)
 		)
 		(property "Height" "0.6"
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -401,7 +401,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -414,7 +414,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -427,7 +427,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Texas Instruments"
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -440,7 +440,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LP5817DRLR"
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -463,16 +463,6 @@
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.4 1.05)
-			(end 0.4 1.05)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e8c76462-63b0-402d-8dea-33defc4670d2")
-		)
 		(fp_line
 			(start -1.7 -0.75)
 			(end -1.7 -0.75)
@@ -503,6 +493,16 @@
 			(layer "F.SilkS")
 			(uuid "66d748cd-676d-4f3e-b30b-d10d230c9b9f")
 		)
+		(fp_line
+			(start -0.4 1.05)
+			(end 0.4 1.05)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e8c76462-63b0-402d-8dea-33defc4670d2")
+		)
 		(fp_arc
 			(start -1.7 -0.75)
 			(mid -1.65 -0.8)
@@ -526,26 +526,6 @@
 			(uuid "35ede176-a6f3-47fe-8c61-e681fc800109")
 		)
 		(fp_line
-			(start -2.075 2.05)
-			(end -2.075 -2.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "781d366d-c313-4e48-98ea-0daec6548358")
-		)
-		(fp_line
-			(start 2.075 2.05)
-			(end -2.075 2.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ae1e82d0-e187-402c-84c6-cd2e01a45a30")
-		)
-		(fp_line
 			(start -2.075 -2.05)
 			(end 2.075 -2.05)
 			(stroke
@@ -554,6 +534,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "f84c49c9-0155-4a85-be77-dd9104177665")
+		)
+		(fp_line
+			(start -2.075 2.05)
+			(end -2.075 -2.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "781d366d-c313-4e48-98ea-0daec6548358")
 		)
 		(fp_line
 			(start 2.075 -2.05)
@@ -566,24 +556,14 @@
 			(uuid "fc185600-8af0-4f8a-926f-e8cb66d41d59")
 		)
 		(fp_line
-			(start -0.6 1.05)
-			(end -0.6 -1.05)
+			(start 2.075 2.05)
+			(end -2.075 2.05)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "26ab34d4-060f-4330-ac62-b6dbbade303a")
-		)
-		(fp_line
-			(start 0.6 1.05)
-			(end -0.6 1.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9b9fa24d-257a-4139-a29a-100a28601988")
+			(layer "F.CrtYd")
+			(uuid "ae1e82d0-e187-402c-84c6-cd2e01a45a30")
 		)
 		(fp_line
 			(start -0.6 -1.05)
@@ -596,6 +576,16 @@
 			(uuid "29849c96-e870-42c7-a48d-b66f41a1ab45")
 		)
 		(fp_line
+			(start -0.6 1.05)
+			(end -0.6 -1.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "26ab34d4-060f-4330-ac62-b6dbbade303a")
+		)
+		(fp_line
 			(start 0.6 -1.05)
 			(end 0.6 1.05)
 			(stroke
@@ -605,8 +595,18 @@
 			(layer "F.Fab")
 			(uuid "938f6970-a6d3-41c2-b89f-3706bba1cdbd")
 		)
+		(fp_line
+			(start 0.6 1.05)
+			(end -0.6 1.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9b9fa24d-257a-4139-a29a-100a28601988")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2 90)
+			(at 0 2 0)
 			(layer "F.Fab")
 			(uuid "40ce2a6c-b759-40ae-a68f-4e28788902be")
 			(effects
@@ -617,7 +617,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.74 -0.75)
+			(at -0.74 -0.75 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "SCK")
@@ -626,7 +626,7 @@
 			(uuid "6ab4f688-41e0-4e11-baba-b190eeabc959")
 		)
 		(pad "2" smd rect
-			(at -0.74 -0.25)
+			(at -0.74 -0.25 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "SDA")
@@ -635,7 +635,7 @@
 			(uuid "d0690af9-20db-47a4-b630-53cfaa7279ad")
 		)
 		(pad "3" smd rect
-			(at -0.74 0.25)
+			(at -0.74 0.25 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -644,7 +644,7 @@
 			(uuid "9d48b46d-4792-49ba-9791-9ad1e9dc5d8e")
 		)
 		(pad "4" smd rect
-			(at -0.74 0.75)
+			(at -0.74 0.75 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "3.3V")
@@ -653,7 +653,7 @@
 			(uuid "78d68443-8c27-4a83-9a20-01da022e9790")
 		)
 		(pad "5" smd rect
-			(at 0.74 0.75)
+			(at 0.74 0.75 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(IC3-NC-Pad5)")
@@ -662,7 +662,7 @@
 			(uuid "0745ef92-bfbb-4af5-b5a8-a64fce301e46")
 		)
 		(pad "6" smd rect
-			(at 0.74 0.25)
+			(at 0.74 0.25 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(IC3-OUT2)")
@@ -671,7 +671,7 @@
 			(uuid "44481e1b-55b9-4983-b5f2-641dc213e78f")
 		)
 		(pad "7" smd rect
-			(at 0.74 -0.25)
+			(at 0.74 -0.25 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(IC3-OUT1)")
@@ -680,7 +680,7 @@
 			(uuid "9f87fe18-7949-4332-9353-ce502a617c72")
 		)
 		(pad "8" smd rect
-			(at 0.74 -0.75)
+			(at 0.74 -0.75 90)
 			(size 0.3 0.67)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(IC3-OUT0)")
@@ -708,7 +708,7 @@
 		(descr "SR0603JR-074R7L")
 		(tags "Resistor")
 		(property "Reference" "R2"
-			(at 0 -1 0)
+			(at 0 -1 90)
 			(layer "F.SilkS")
 			(uuid "8909f75e-f832-4da4-bd05-425fda6b7f64")
 			(effects
@@ -719,7 +719,7 @@
 			)
 		)
 		(property "Value" "SR0603JR-074R7L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "06d859cb-c61d-4f83-96d6-91fa3f1c7fc4")
@@ -731,7 +731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "de7d94c3-67e9-4077-86de-db6a3b9e61ef")
@@ -742,7 +742,7 @@
 			)
 		)
 		(property "Description" "Thick Film Resistors - SMD 4.7 Ohms 1/10 W 0603 5 % AEC-Q200"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "25ba78c0-a391-4cd0-bb03-6b68506c671c")
@@ -919,7 +919,7 @@
 			(uuid "97dca2f3-3865-4e60-963a-36e46c21bd8a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.5 0)
+			(at 0 -1.5 90)
 			(layer "F.Fab")
 			(uuid "56d92f0f-baa3-4e6e-bbc9-3f5bbdc746a9")
 			(effects
@@ -1594,7 +1594,7 @@
 		(descr "MBASx168")
 		(tags "Capacitor")
 		(property "Reference" "C1"
-			(at 0 1 0)
+			(at 0 1 90)
 			(layer "F.SilkS")
 			(uuid "cfee72cb-7b9b-48b4-a001-8ce46243f27f")
 			(effects
@@ -1605,7 +1605,7 @@
 			)
 		)
 		(property "Value" "MBASG168AB7105KTNA01"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f047da6b-893e-4634-ace0-fa8cfcb53f1a")
@@ -1617,7 +1617,7 @@
 			)
 		)
 		(property "Datasheet" "https://ds.yuden.co.jp/TYCOMPAS/or/detail?pn=MBASG168AB7105KTNA01"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1e1798cb-95a4-4dee-9e7d-20979245a51c")
@@ -1628,7 +1628,7 @@
 			)
 		)
 		(property "Description" "MULTILAYER CERAMIC CAPACITORS[Multilayer Ceramic Capacitors (High dielectric type) for Telecommunications Infrastructure and Industrial Equipment]"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f67a81b8-7a0c-48d9-aadb-abe81a8a2360")
@@ -1725,14 +1725,14 @@
 			(uuid "44ab720e-194c-408a-bfed-86a4dc9c2a61")
 		)
 		(fp_line
-			(start -1.5 0.1)
-			(end -1.5 0.1)
+			(start -1.5 -0.1)
+			(end -1.5 -0.1)
 			(stroke
 				(width 0.2)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "cfd9d2a4-375f-443d-8254-d37ac926335b")
+			(uuid "fb050145-c83a-4c7f-a55c-4e50f6dfcc88")
 		)
 		(fp_line
 			(start -1.5 -0.1)
@@ -1847,7 +1847,7 @@
 			(uuid "34a49e06-f21c-468e-ab64-5e372205664d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 1.5 0)
+			(at 0 1.5 90)
 			(layer "F.Fab")
 			(uuid "1497be49-aa25-44d3-b730-99af15eeccb7")
 			(effects
@@ -5820,7 +5820,7 @@
 		(start 151.6 101.948529)
 		(end 152.751471 103.1)
 		(width 0.2)
-		(layer "F.Cu")
+		(layer "B.Cu")
 		(net "Net-(IC3-OUT2)")
 		(uuid "b453e489-4cac-42b1-a840-c5007f71e1d0")
 	)

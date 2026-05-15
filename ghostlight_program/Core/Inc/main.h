@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "flash.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,12 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LIVE_Pin GPIO_PIN_8
-#define LIVE_GPIO_Port GPIOA
 #define I2C_ERROR_Pin GPIO_PIN_12
 #define I2C_ERROR_GPIO_Port GPIOA
-#define FLAG_Pin GPIO_PIN_13
-#define FLAG_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
