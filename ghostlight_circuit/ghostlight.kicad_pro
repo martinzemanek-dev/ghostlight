@@ -669,9 +669,14 @@
         "filename": "programming_connector.kicad_sch",
         "name": "Programming Connector",
         "uuid": "b636877d-752a-41a6-8565-62b29fe98f71"
+      },
+      {
+        "filename": "accelorometer.kicad_sch",
+        "name": "Accelorometer",
+        "uuid": "b5113e67-162d-4219-bbd5-85511f05c17c"
       }
     ],
-    "used_designators": "U1,BLUE1,J1,R1-2,IC1-3,C1-4,LED1,BT1,GREEN1,RED1,S1",
+    "used_designators": "U1,BLUE1,AC1,J1,R1-2,IC1-3,C1-6,LED1,BT1,GREEN1,RED1",
     "variants": []
   },
   "sheets": [
@@ -690,6 +695,10 @@
     [
       "b636877d-752a-41a6-8565-62b29fe98f71",
       "Programming Connector"
+    ],
+    [
+      "b5113e67-162d-4219-bbd5-85511f05c17c",
+      "Accelorometer"
     ]
   ],
   "text_variables": {},

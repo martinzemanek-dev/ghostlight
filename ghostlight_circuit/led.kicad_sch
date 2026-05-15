@@ -5,129 +5,6 @@
 	(uuid "a4ce99f1-2761-4c61-884d-b888dbc65766")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "SamacSys_Parts:LP5817DRLR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -848,38 +725,10 @@
 		(uuid "05657d1a-067e-418a-b9ca-c413d4f81015")
 	)
 	(junction
-		(at 171.45 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05abc958-dc29-4c99-b2ac-32fdb686974a")
-	)
-	(junction
-		(at 191.77 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23cbaa5b-10cd-4e5d-b428-8c6ba03a6664")
-	)
-	(junction
 		(at 73.66 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ca63f68-1148-4034-b150-cdcf2b87f80b")
-	)
-	(junction
-		(at 180.34 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e5ebdc41-04c7-4f03-8d23-902fa013ee68")
-	)
-	(wire
-		(pts
-			(xy 180.34 53.34) (xy 180.34 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0666a575-f66b-4ebc-aace-e5fba55ffc9b")
 	)
 	(wire
 		(pts
@@ -903,7 +752,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 64.77) (xy 191.77 64.77)
+			(xy 111.76 64.77) (xy 193.04 64.77)
 		)
 		(stroke
 			(width 0)
@@ -973,16 +822,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 64.77) (xy 111.76 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28e9318f-8dc5-4d38-9678-eb4673a0d425")
-	)
-	(wire
-		(pts
 			(xy 176.53 101.6) (xy 189.23 101.6)
 		)
 		(stroke
@@ -993,16 +832,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 59.69) (xy 111.76 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34519d5e-de04-4de0-bc9e-07a53bbbdf57")
-	)
-	(wire
-		(pts
 			(xy 176.53 99.06) (xy 176.53 59.69)
 		)
 		(stroke
@@ -1010,16 +839,6 @@
 			(type default)
 		)
 		(uuid "37e0e6d1-a4f0-4a48-93c4-40cbb6d393f1")
-	)
-	(wire
-		(pts
-			(xy 180.34 62.23) (xy 111.76 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f35c2f5-1a69-47f4-8759-81a2b4b53190")
 	)
 	(wire
 		(pts
@@ -1063,7 +882,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 62.23) (xy 180.34 62.23)
+			(xy 111.76 62.23) (xy 189.23 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1123,26 +942,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 53.34) (xy 189.23 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b082fb3-c035-49ac-ad33-6ef9ed201a21")
-	)
-	(wire
-		(pts
-			(xy 191.77 60.96) (xy 191.77 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92f6f78c-744b-4176-897a-bd89eb8de1d1")
-	)
-	(wire
-		(pts
 			(xy 111.76 67.31) (xy 111.76 77.47)
 		)
 		(stroke
@@ -1163,7 +962,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 59.69) (xy 171.45 59.69)
+			(xy 111.76 59.69) (xy 176.53 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1203,16 +1002,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 53.34) (xy 171.45 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdeaca12-15ac-4e53-850e-a9d7a87b71fe")
-	)
-	(wire
-		(pts
 			(xy 59.69 87.63) (xy 59.69 93.98)
 		)
 		(stroke
@@ -1220,16 +1009,6 @@
 			(type default)
 		)
 		(uuid "d393497b-297c-4402-a5a8-cb9429772762")
-	)
-	(wire
-		(pts
-			(xy 189.23 60.96) (xy 191.77 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d85f16fe-c71a-4b54-b091-e91672459f23")
 	)
 	(wire
 		(pts
@@ -1836,261 +1615,6 @@
 			(project "led"
 				(path "/a4ce99f1-2761-4c61-884d-b888dbc65766"
 					(reference "LED1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 189.23 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae210176-d7f8-4e57-b976-f6d66eeafc41")
-		(property "Reference" "BLUE1"
-			(at 191.77 48.7679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_B"
-			(at 191.77 51.3079 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 194.31 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 189.23 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "84a8f7c5-3ccc-4b44-8f46-3f5c600bb8f9")
-		)
-		(instances
-			(project "ghostlight"
-				(path "/9d2d5108-9001-47c6-9796-84893d7244e5"
-					(reference "BLUE1")
-					(unit 1)
-				)
-			)
-			(project "led"
-				(path "/a4ce99f1-2761-4c61-884d-b888dbc65766"
-					(reference "BLUE")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 180.34 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b2d1d9a4-12f8-4f0b-be89-c22bcfa33ea7")
-		(property "Reference" "GREEN1"
-			(at 182.88 48.7679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_G"
-			(at 182.88 51.3079 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 185.42 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 180.34 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "92a423c8-3621-4b0b-9e67-5ef7bd2f1bf5")
-		)
-		(instances
-			(project "ghostlight"
-				(path "/9d2d5108-9001-47c6-9796-84893d7244e5"
-					(reference "GREEN1")
-					(unit 1)
-				)
-			)
-			(project "led"
-				(path "/a4ce99f1-2761-4c61-884d-b888dbc65766"
-					(reference "GREEN")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 171.45 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c973e804-1c5d-443f-b273-12729cd54da3")
-		(property "Reference" "RED1"
-			(at 173.99 48.7679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_R"
-			(at 173.99 51.3079 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 176.53 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 171.45 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "df163ecd-8562-47fb-b628-335668975b8d")
-		)
-		(instances
-			(project "ghostlight"
-				(path "/9d2d5108-9001-47c6-9796-84893d7244e5"
-					(reference "RED1")
-					(unit 1)
-				)
-			)
-			(project "led"
-				(path "/a4ce99f1-2761-4c61-884d-b888dbc65766"
-					(reference "RED")
 					(unit 1)
 				)
 			)
