@@ -1,10 +1,10 @@
-# ghostlight
+# Ghostlight
 Small board under a see-through miniature, to light it up. The board is powered by a battery and the light is programmable.
-## power supply
-Circuit is exprcted to be build for 3V
-### battery
+## Power supply
+Circuit is expected to be build for 3V
+### Battery
 CR2032 for start. It needs holder at the bottom [BAT-HLD-001](https://cz.mouser.com/ProductDetail/712-BAT-HLD-001)
-### regulator
+### Regulator
 [MCP1700T-3302E/TT](https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP1700T-3302E-TTVAO?qs=5aG0NVq1C4y9x%252BiC%252BXtIqg%3D%3D)
 [1kF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MBASG168AB7105KTNA01?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXWJL8eB%2Fc1Uk%3D)
 [100nF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXza8LoeCVgcc%3D)
