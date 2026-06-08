@@ -11,7 +11,6 @@ CR2032 for start. It needs holder at the bottom [BAT-HLD-001](https://cz.mouser.
 [4.7 kilo ohm](https://www.gme.cz/v/1496357/yageo-r0603-4k7-01w-5-smd-rezistor)
 ## microcontroler
 [STM32C011J4M6](https://cz.mouser.com/ProductDetail/511-STM32C011J4M6) (SO8 package)
-### programming
 
 ## LED
 ### LED control
