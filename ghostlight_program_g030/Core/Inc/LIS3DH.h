@@ -18,4 +18,14 @@ uint8_t LIS3DH_init(void);
  */
 uint8_t LIS3DH_getAxes(int16_t *x, int16_t *y, int16_t *z);
 
+
+/**
+ * @brief read one specific register of LIS3DH using your shared I2C DMA pattern
+ *
+ * @input reg, register to read
+ * @output buffer, pointer to buffer with output
+ * @input size of the buffer
+ * @return error, if any occured
+ */
+uint8_t LIS3DH_read_reg(uint8_t reg, uint8_t *buffer, uint16_t size);
 #endif /* LIS3DH_H_ */
