@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "LP5817.h"
+#include "LIS3DH.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +46,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+int16_t accel_x = 0;
+int16_t accel_y = 0;
+int16_t accel_z = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -65,6 +68,9 @@ void handleI2CErr(uint8_t error_code) {
 	}
 }
 
+#define MAX_BRIGHT 100
+#define SCALE(val) ((val * MAX_BRIGHT) / 255)
+
 /* Helper function to convert Hue (0-359) to RGB */
 void SetRainbowColor(uint16_t hue) {
 	uint8_t r = 0, g = 0, b = 0;
@@ -76,8 +82,6 @@ void SetRainbowColor(uint16_t hue) {
 	uint8_t t = remainder;
 
 	// Scale down from 255 to your maximum target brightness (e.g., max 150 to not blind you)
-#define MAX_BRIGHT 100
-#define SCALE(val) ((val * MAX_BRIGHT) / 255)
 
 	switch (region) {
 	case 0:
@@ -153,9 +157,15 @@ int main(void) {
 	HAL_Delay(1);
 	handleI2CErr(i2c_err);
 
+	LP5817_setColor(255, 0, 0);
+
+	i2c_err = LIS3DH_init();
+	HAL_Delay(1);
+	handleI2CErr(i2c_err);
+
 	HAL_Delay(500);
 
-	uint16_t hue = 0;
+	//uint16_t hue = 0;
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -165,15 +175,32 @@ int main(void) {
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
+
 		// Update the LED color based on current hue
-		SetRainbowColor(hue);
+		/*SetRainbowColor(hue);
 
-		// Advance to the next color angle
-		hue++;
-		if (hue >= 360) {
-			hue = 0;
-		}
+		 // Advance to the next color angle
+		 hue++;
+		 if (hue >= 360) {
+		 hue = 0;
+		 }*/
 
+		//Update colour based on accelerometer output
+		LIS3DH_getAxes(&accel_x, &accel_y, &accel_z);
+		// 2. Convert to absolute values (so upside-down or backwards movement still creates light)
+		// We divide by 4 to map ~1000 (1G of gravity) down to ~250 (perfect for an 8-bit LED channel)
+		int16_t r_val = (accel_x >= 0 ? accel_x : (-accel_x)) / 64;
+		int16_t g_val = (accel_y >= 0 ? accel_y : (-accel_y)) / 64;
+		int16_t b_val = (accel_z >= 0 ? accel_z : (-accel_z)) / 64;
+
+		// 3. Constrain the values between 0 and 255 just to protect against high-acceleration spikes
+		if (r_val > 255)
+			r_val = 255;
+		if (g_val > 255)
+			g_val = 255;
+		if (b_val > 255)
+			b_val = 255;
+		LP5817_setColor(SCALE((uint8_t)r_val), SCALE((uint8_t)g_val), SCALE((uint8_t)b_val));
 		// Adjust this delay to speed up or slow down the transition.
 		// 30ms gives a beautifully smooth, tranquil fade.
 		HAL_Delay(30);
