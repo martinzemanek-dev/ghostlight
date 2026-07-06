@@ -52,9 +52,6 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, GPIO_PIN_RESET);
-
   /*Configure GPIO pins : PB7 PB6 */
   GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_6;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
@@ -73,12 +70,11 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : I2C_ERROR_Pin */
-  GPIO_InitStruct.Pin = I2C_ERROR_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  /*Configure GPIO pin : LIS3DH_INT1_Pin */
+  GPIO_InitStruct.Pin = LIS3DH_INT1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(I2C_ERROR_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(LIS3DH_INT1_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PC15 */
   GPIO_InitStruct.Pin = GPIO_PIN_15;
@@ -87,8 +83,12 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /**/
-  HAL_SYSCFG_SetPinBinding(HAL_BIND_SO8_PIN4_PF2|HAL_BIND_SO8_PIN4_PA0|HAL_BIND_SO8_PIN4_PA1
-                          |HAL_BIND_SO8_PIN4_PA2);
+  HAL_SYSCFG_SetPinBinding(HAL_BIND_SO8_PIN1_PB7|HAL_BIND_SO8_PIN4_PF2|HAL_BIND_SO8_PIN4_PA0|HAL_BIND_SO8_PIN4_PA1
+                          |HAL_BIND_SO8_PIN4_PA2|HAL_BIND_SO8_PIN5_PA8|HAL_BIND_SO8_PIN8_PC15|HAL_BIND_SO8_PIN8_PB6);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 
 }
 
