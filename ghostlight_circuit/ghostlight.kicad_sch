@@ -5,7 +5,7 @@
 	(uuid "c84668a1-6299-4dd7-b9cf-055166213e49")
 	(paper "A4")
 	(lib_symbols
-		(symbol "SamacSys_Parts:3000"
+		(symbol "SamacSys_Parts:BAT-HLD-001"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -22,7 +22,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "3000"
+			(property "Value" "BAT-HLD-001"
 				(at 19.05 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -33,7 +33,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "3000"
+			(property "Footprint" "BATHLD001"
 				(at 19.05 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -45,7 +45,7 @@
 					(justify left top)
 				)
 			)
-			(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=777"
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FC-BAT-HLD-001-xx%7FE%7Fpdf%7FEnglish%7FENG_CD_C-BAT-HLD-001-xx_E.pdf%7FBAT-HLD-001"
 				(at 19.05 -194.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -57,7 +57,7 @@
 					(justify left top)
 				)
 			)
-			(property "Description" "KEYSTONE - 3000 - Battery Contact, Coin Cell - 12mm, SMD, Phosphor Bronze"
+			(property "Description" "Battery Holders, CR2032, 1 Position, Horizontal, Nickel, PCB Mount Alignment, Power, -40  257 F [-40  125 C]"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -68,7 +68,7 @@
 					)
 				)
 			)
-			(property "Height" "3.43"
+			(property "Height" "4.3"
 				(at 19.05 -394.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -80,7 +80,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Part Number" "534-3000"
+			(property "Mouser Part Number" "712-BAT-HLD-001"
 				(at 19.05 -494.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -92,7 +92,7 @@
 					(justify left top)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3000?qs=Mn60vILZNNbcLh3ZnzbtUw%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-001?qs=K5ta8V%252BWhta7hbVGfm4dqA%3D%3D"
 				(at 19.05 -594.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -104,7 +104,7 @@
 					(justify left top)
 				)
 			)
-			(property "Manufacturer_Name" "Keystone Electronics"
+			(property "Manufacturer_Name" "TE Connectivity"
 				(at 19.05 -694.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -116,7 +116,7 @@
 					(justify left top)
 				)
 			)
-			(property "Manufacturer_Part_Number" "3000"
+			(property "Manufacturer_Part_Number" "BAT-HLD-001"
 				(at 19.05 -794.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -128,7 +128,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "3000_1_1"
+			(symbol "BAT-HLD-001_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 17.78 -7.62)
@@ -678,26 +678,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 121.92) (xy 214.63 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46ae5392-3fa7-42d0-9788-914dca1a2532")
-	)
-	(wire
-		(pts
-			(xy 222.25 121.92) (xy 218.44 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a6d04ff-e6df-48e1-ae31-27f0ab3890ad")
-	)
-	(wire
-		(pts
 			(xy 86.36 100.33) (xy 86.36 101.6)
 		)
 		(stroke
@@ -778,7 +758,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 111.76) (xy 208.28 111.76)
+			(xy 208.28 111.76) (xy 222.25 111.76)
 		)
 		(stroke
 			(width 0)
@@ -808,33 +788,13 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 119.38) (xy 222.25 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4970ea4-89e3-40ad-8dd2-0e165b0426e1")
-	)
-	(wire
-		(pts
-			(xy 172.72 121.92) (xy 214.63 121.92)
+			(xy 172.72 121.92) (xy 222.25 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a902d23c-f312-4fb1-a5b4-02863e435eb7")
-	)
-	(wire
-		(pts
-			(xy 218.44 121.92) (xy 218.44 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8b8025a-b5f2-48b8-8796-5833daa29297")
 	)
 	(wire
 		(pts
@@ -845,6 +805,16 @@
 			(type default)
 		)
 		(uuid "c8d2b58b-4eeb-4e3d-b4e4-2cd9a3e62f26")
+	)
+	(wire
+		(pts
+			(xy 222.25 111.76) (xy 222.25 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca2decda-3e29-45da-93f6-be00c9583b1b")
 	)
 	(wire
 		(pts
@@ -1268,6 +1238,153 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys_Parts:BAT-HLD-001")
+		(at 222.25 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fb99646-fd8d-43df-b7f0-032990206096")
+		(property "Reference" "BT1"
+			(at 241.3 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT-HLD-001"
+			(at 241.3 123.1899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "custom_ring:BATHLD001mod"
+			(at 241.3 214.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7FC-BAT-HLD-001-xx%7FE%7Fpdf%7FEnglish%7FENG_CD_C-BAT-HLD-001-xx_E.pdf%7FBAT-HLD-001"
+			(at 241.3 314.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Battery Holders, CR2032, 1 Position, Horizontal, Nickel, PCB Mount Alignment, Power, -40  257 F [-40  125 C]"
+			(at 222.25 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "4.3"
+			(at 241.3 514.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "712-BAT-HLD-001"
+			(at 241.3 614.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Linx-Technologies/BAT-HLD-001?qs=K5ta8V%252BWhta7hbVGfm4dqA%3D%3D"
+			(at 241.3 714.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 241.3 814.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BAT-HLD-001"
+			(at 241.3 914.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "1"
+			(uuid "aaaa0345-aff7-41c2-8295-5eb890bd95c6")
+		)
+		(pin "3"
+			(uuid "f78cb2a9-522b-49f6-a8b0-1beb98cfdfc2")
+		)
+		(pin "2"
+			(uuid "75d02205-a984-43a8-85ed-f83ef195167d")
+		)
+		(instances
+			(project "ghostlight"
+				(path "/c84668a1-6299-4dd7-b9cf-055166213e49"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys_Parts:MBASG168AB7105KTNA01")
 		(at 137.16 104.14 270)
 		(unit 1)
@@ -1406,153 +1523,6 @@
 			(project "ghostlight"
 				(path "/c84668a1-6299-4dd7-b9cf-055166213e49"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys_Parts:3000")
-		(at 222.25 119.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd2cdf83-3a19-481c-ac20-1fb7ebef0275")
-		(property "Reference" "BT1"
-			(at 241.3 120.6499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3000"
-			(at 241.3 123.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "custom_ring:Battery_Holder_Lynx_CR2032"
-			(at 241.3 214.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.keyelco.com/product-pdf.cfm?p=777"
-			(at 241.3 314.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "KEYSTONE - 3000 - Battery Contact, Coin Cell - 12mm, SMD, Phosphor Bronze"
-			(at 222.25 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "3.43"
-			(at 241.3 514.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "534-3000"
-			(at 241.3 614.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3000?qs=Mn60vILZNNbcLh3ZnzbtUw%3D%3D"
-			(at 241.3 714.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 241.3 814.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "3000"
-			(at 241.3 914.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "2"
-			(uuid "1231cfad-f57a-433e-bda9-e4fc9b4adfd3")
-		)
-		(pin "1"
-			(uuid "b5dbb2d9-7540-4510-9c04-463504499ef6")
-		)
-		(pin "3"
-			(uuid "0588a5c1-c152-4e1b-a772-0eeb492e8014")
-		)
-		(instances
-			(project "ghostlight"
-				(path "/c84668a1-6299-4dd7-b9cf-055166213e49"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
