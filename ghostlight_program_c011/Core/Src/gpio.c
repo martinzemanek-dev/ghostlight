@@ -70,11 +70,11 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LIS3DH_INT1_Pin */
-  GPIO_InitStruct.Pin = LIS3DH_INT1_Pin;
+  /*Configure GPIO pin : LIS3_INT1_Pin */
+  GPIO_InitStruct.Pin = LIS3_INT1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(LIS3DH_INT1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(LIS3_INT1_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PC15 */
   GPIO_InitStruct.Pin = GPIO_PIN_15;

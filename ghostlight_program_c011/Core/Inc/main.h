@@ -57,9 +57,9 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LIS3DH_INT1_Pin GPIO_PIN_12
-#define LIS3DH_INT1_GPIO_Port GPIOA
-#define LIS3DH_INT1_EXTI_IRQn EXTI4_15_IRQn
+#define LIS3_INT1_Pin GPIO_PIN_12
+#define LIS3_INT1_GPIO_Port GPIOA
+#define LIS3_INT1_EXTI_IRQn EXTI4_15_IRQn
 
 /* USER CODE BEGIN Private defines */
 

@@ -24,6 +24,7 @@
 #include "gpio.h"
 
 volatile int i2c_busy;
+volatile int i2c_err;
 /* USER CODE END 0 */
 
 I2C_HandleTypeDef hi2c1;
@@ -203,15 +204,8 @@ void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c) {
 
 void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c) {
     if (hi2c->Instance == I2C1) {
-    	if (hi2c->ErrorCode == 0x04)
-    	{
-    		HAL_GPIO_WritePin(I2C_ERROR_GPIO_Port, I2C_ERROR_Pin, SET);
-    	}
-    	else
-    	{
-    		//HAL_GPIO_WritePin(FLAG_GPIO_Port, FLAG_Pin, SET);
-    	}
     	i2c_busy = 0; // This "unlocks" the while loop above
+    	i2c_err = hi2c->ErrorCode;
     }
 }
 
