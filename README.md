@@ -10,11 +10,8 @@ CR2032 for start. It needs holder at the bottom [BAT-HLD-001](https://cz.mouser.
 [100nF](https://cz.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU105SB7104KFNB25?qs=sGAEpiMZZMukHu%252BjC5l7YRGYzw8qFBFXza8LoeCVgcc%3D)
 [10uF](https://cz.mouser.com/ProductDetail/Murata-Electronics/GRM155C80G106ME18D?qs=doiCPypUmgHaqNm%2FsBDkxw%3D%3D)
 [4.7 kilo ohm](https://www.gme.cz/v/1496357/yageo-r0603-4k7-01w-5-smd-rezistor)
-### regulator
-[MCP1700T-3302E/TT](https://cz.mouser.com/ProductDetail/Microchip-Technology/MCP1700T-3302E-TTVAO?qs=5aG0NVq1C4y9x%252BiC%252BXtIqg%3D%3D)
-Needs 1kF on input and output.
 ## microcontroler
-[STM32C011J4M6](https://cz.mouser.com/ProductDetail/511-STM32C011J4M6) (SO8 package).
+[STM32C011J4M6](https://cz.mouser.com/ProductDetail/511-STM32C011J4M6) (SO8 package) or [STM32C011J6M6](https://cz.mouser.com/cs/ProductDetail/511-STM32G030J6M6).
 Needs 100nF between VCC and GND and 2 4.7kOhm resitors for I2C.
 ### programming
 
